@@ -28,9 +28,18 @@ const StyledDOB = styled.button`
     @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
     font-family: 'Orbitron', sans-serif;
 
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     border-radius: 50px;
+    padding: 10px;
+    width: 20%;
+    background-color: ${pr => pr.theme.darkgray};
+    color: ${pr => pr.theme.purple};
+    font-weight: bold;
+`
+
+const StyledName = styled.p`
+    font-weight: 25px;
 `
 
 const Character = props => {

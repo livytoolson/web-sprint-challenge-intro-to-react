@@ -29,7 +29,7 @@ const StyledTitle = styled.h1`
   font-family: 'Orbitron', sans-serif;
   text-shadow: 2px 2px ${pr => pr.theme.white};
   font-size: 60px;
-  color: ${pr => pr.theme.gray};
+  color: darkgray;
 `
 
 const App = () => {
