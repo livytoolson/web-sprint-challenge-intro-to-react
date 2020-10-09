@@ -20,9 +20,17 @@ const StyledDiv = styled.div`
   flex-direction: column;
   align-items: center;
   align-content: space-between;
-  padding: 160px;
-  border: 5px solid gray;
+  padding-top: 20px;
+  padding-bottom: 50px;
   `
+
+const StyledTitle = styled.h1`
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 2px 2px ${pr => pr.theme.white};
+  font-size: 60px;
+  color: ${pr => pr.theme.gray};
+`
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -46,7 +54,7 @@ const App = () => {
 
   return (
     <StyledDiv className="App">
-      <h1 className="Header">REACT WARS</h1>
+      <StyledTitle className="Header">REACT WARS</StyledTitle>
       {data.map(character => {
         return <Character key={character.name} name={character.name} birth_year={character.birth_year}/>
       })}

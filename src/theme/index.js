@@ -3,6 +3,7 @@ export default {
     black: 'black',
     white: 'white',
     green: '#39FF14',
+    gray: 'd3d3d3',
     breakpoints: {
         mobile: '(max-width: 550px)',
         tablet: '(max-width: 800px)',
