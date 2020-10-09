@@ -9,9 +9,14 @@ import axios from 'axios'
 import { BASE_URL } from './constants/index'
 
 // import styled components
-// import styled from 'styled-components'
+import styled from 'styled-components'
 
 // component styling
+const StyledBackground = styled.div`
+  background-image: url(
+    'https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80'
+    );
+  `
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out

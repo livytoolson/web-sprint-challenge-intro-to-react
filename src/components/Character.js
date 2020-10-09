@@ -4,6 +4,7 @@ import React from 'react';
 
 // component styling
 
+
 const Character = props => {
     const { name, birth_year } = props;
 
