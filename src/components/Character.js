@@ -5,13 +5,14 @@ import React from 'react';
 // component styling
 
 const Character = props => {
-    const { character, birth_year } = props;
+    const { name, birth_year } = props;
 
     return (
         <div>
-            {character} {birth_year}
+            {name} {birth_year}
         </div>
     )
 }
 
 export default Character;
+

@@ -36,7 +36,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      <Character character={data.name} birth_year={data.birth_year} />
+      {data.map(character => {
+        return <Character key={character.name} name={character.name} birth_year={character.birth_year}/>
+      })}
     </div>
   );
 }
