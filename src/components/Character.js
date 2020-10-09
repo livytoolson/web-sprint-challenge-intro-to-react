@@ -39,7 +39,7 @@ const StyledDOB = styled.button`
 `
 
 const StyledName = styled.p`
-    font-weight: 25px;
+    font-weight: 30px;
 `
 
 const Character = props => {
@@ -47,7 +47,7 @@ const Character = props => {
 
     return (
         <StyledCharacter>
-            <p>Name: {name}</p>
+            <StyledName>Name: {name}</StyledName>
             <StyledDOB>DOB: {birth_year}</StyledDOB>
         </StyledCharacter>
     )

@@ -30,11 +30,16 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS updates the virtual DOM with the elements and state (data) we tell it to render to the actual DOM. The virutal DOM will "react" when the state (data) in our app changes and will update the DOM accordingly. React provides a smooth experience for our users, as well as those developing applications.
+
 1. Describe component state.
+The state of a component is an object that holds some information that may change over the lifetime of a component. 
 
 1. Describe props.
+Props are used to pass data from one component to another. Props have a uni-directional flow, one way from the parent to the child. Props are arguments passed into React components. Props are passed to components via HTML attributes.
 
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+A side effect is anything that affects something outside of the function being executed. We sync effects in a React component to changes of certain state or props by passing in a dependency array as the second argument of the effect hook.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
