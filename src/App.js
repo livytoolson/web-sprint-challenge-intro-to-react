@@ -12,10 +12,16 @@ import { BASE_URL } from './constants/index'
 import styled from 'styled-components'
 
 // component styling
-const StyledBackground = styled.div`
+const StyledDiv = styled.div`
   background-image: url(
     'https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80'
     );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  padding: 160px;
+  border: 5px solid gray;
   `
 
 const App = () => {
@@ -31,7 +37,7 @@ const App = () => {
     axios.get(`${BASE_URL}`)
       .then(res => {
         setData(res.data.results)
-        console.log(res.data.results)
+        // console.log(res.data.results)
       })
       .catch(err => {
         debugger
@@ -39,12 +45,12 @@ const App = () => {
 }, [])
 
   return (
-    <div className="App">
-      <h1 className="Header">Characters</h1>
+    <StyledDiv className="App">
+      <h1 className="Header">REACT WARS</h1>
       {data.map(character => {
         return <Character key={character.name} name={character.name} birth_year={character.birth_year}/>
       })}
-    </div>
+    </StyledDiv>
   );
 }
 
